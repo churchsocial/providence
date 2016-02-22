@@ -1,0 +1,150 @@
+.church_social_sermon_archive {
+    margin: 20px 0;
+
+    table {
+        width: 100%;
+        border-spacing: 0;
+        border-collapse: separate;
+
+        thead {
+            tr {
+                th {
+                    padding: 5px;
+                    font-family: "MyriadPro Bold";
+                    -webkit-font-smoothing: antialiased;
+                    font-weight: normal;
+                    color: lighten($purple, 10%);
+                    font-size: 20px;
+                    line-height: 120%;
+                    text-align: left;
+                    border-bottom: lighten(#B2A582, 20%) solid 1px;
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                td {
+                    font-size: 14px;
+                    line-height: 120%;
+                    padding: 10px 5px;
+                    background: lighten(#B2A582, 36%);
+                    border-bottom: lighten(#B2A582, 20%) solid 1px;
+                }
+            }
+        }
+    }
+
+    .sermon {
+        .description {
+            margin: 15px 0;
+        }
+
+        ul.details {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                position: relative;
+                padding: 0 0 5px 90px;
+
+                h3 {
+                    margin: 0;
+                    width: 90px;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    font-size: 16px;
+                    line-height: 150%;
+                }
+
+                p {
+                    margin: 0;
+                    font-size: 14px;
+                    line-height: 150%;
+                }
+            }
+        }
+
+        .formats {
+            margin: 25px 0 0 0;
+
+            .tab_navigation {
+                overflow: hidden;
+                list-style: none;
+                margin: 0;
+                padding: 10px 0 0 15px;
+                background: lighten(rgb(108, 108, 90), 50%);
+                border-radius: 3px 3px 0 0;
+
+                li {
+                    float: left;
+                    padding: 5px 15px 3px 15px;
+                    color: lighten(rgb(108, 108, 90), 15%);
+                    font-weight: bold;
+                    font-size: 13px;
+                    text-decoration: none;
+                    border-radius: 2px 2px 0 0;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: rgb(108, 108, 90);
+                    }
+
+                    &.selected {
+                        color: white;
+                        background: lighten(rgb(108, 108, 90), 30%);
+                    }
+                }
+            }
+
+            .tab_content {
+                list-style: none;
+                margin: 0;
+                background: lighten(rgb(108, 108, 90), 30%);
+                border-radius: 0 0 3px 3px;
+
+                @media only screen and (max-width: 979px) {
+                    padding: 10px;
+                }
+
+                @media only screen and (min-width: 980px) {
+                    padding: 15px;
+                }
+
+                li {
+                    display: none;
+
+                    &.selected {
+                        display: block;
+                    }
+
+                    &.audio {
+                        audio {
+                            margin: 10px 0 20px 0;
+                            display: block;
+                        }
+
+                        a {
+                            display: inline-block;
+                            padding: 10px 15px;
+                            color: darken(white, 35%);
+                            font-size: 14px;
+                            line-height: 100%;
+                            font-weight: bold;
+                            background: lighten(black, 15%);
+                            border-radius: 3px;
+
+                            &:hover {
+                                color: darken(white, 25%);
+                                background: lighten(black, 10%);
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
