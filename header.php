@@ -5,13 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?php wp_title('|', true, 'right').bloginfo('name') ?></title>
-    <?php if (get_bloginfo('description')): ?>
-        <meta name="description" content="<?php bloginfo('description')?>">
-    <?php endif ?>
+    <meta name="description" content="<?php bloginfo('description')?>">
     <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_url') ?>/css/all.css" />
     <script src="<?php bloginfo('template_url') ?>/js/respond.js"></script>
     <?php wp_head() ?>
 </head>
+
 <body>
 
 <div class="header">

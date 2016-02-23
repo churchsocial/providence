@@ -3,10 +3,8 @@
 // Register main menu
 register_nav_menu('main_menu', 'Main Menu');
 
-// Add post thumbnail support
-add_theme_support('post-thumbnails');
-
 // Register custom images sizes
+add_theme_support('post-thumbnails');
 add_image_size('banner_large', 900, 450, true);
 add_image_size('banner_small', 900, 275, true);
 
