@@ -30,7 +30,7 @@
     </div>
 </div>
 
-<script src="<?php bloginfo('template_url') ?>/js/all.min.js"></script>
+<script src="<?php bloginfo('template_url') ?>/js/all.js"></script>
 
 <?php wp_footer() ?>
 
