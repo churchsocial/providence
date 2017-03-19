@@ -8,6 +8,9 @@ add_action('after_setup_theme', function () {
     // Register main menu
     register_nav_menu('main_menu', 'Main Menu');
 
+    // Register sidebars
+    register_sidebar(['name' => 'Page']);
+
     // Register custom images sizes
     add_theme_support('post-thumbnails');
     add_image_size('banner_large', 900, 450, true);

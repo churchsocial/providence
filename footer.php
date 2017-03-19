@@ -1,13 +1,14 @@
             </div>
         </div>
-        <div class="sidebar">
+        <ul class="sidebar">
             <?php if (get_theme_mod('service_times')): ?>
-                <div class="service_times">
+                <li class="service_times">
                     <h2>Join Us!</h2>
                     <p><?=get_theme_mod('service_times')?></p>
-                </div>
+                </li>
             <?php endif ?>
-        </div>
+            <?php dynamic_sidebar('Page') ?>
+        </ul>
     </div>
 </div>
 <div class="footer">
